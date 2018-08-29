@@ -9,12 +9,13 @@ export class BrandService {
     constructor(
         private httpClient: HttpClient
     ) {
-        this.domain = "http://kiranpadwaltestconnecsi.pythonanywhere.com";
+        this.domain = "https://kiranpadwaltestconnecsi.pythonanywhere.com";
     }
 
 
     getBrandById(id): Observable<any> {
         const url = this.domain + "/api/Brand/" + id;
+        //alert(url);
         return this.httpClient.get(url, { observe: 'response' }).pipe(
             map((res: HttpResponse<any>) => {
                 return res;

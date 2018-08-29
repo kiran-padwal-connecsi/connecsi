@@ -9,7 +9,7 @@ export class UserService {
     constructor(
         private httpClient: HttpClient
     ) {
-        this.domain = "http://kiranpadwaltestconnecsi.pythonanywhere.com";
+        this.domain = "https://kiranpadwaltestconnecsi.pythonanywhere.com";
     }
 
     loginService(body): Observable<any> {
