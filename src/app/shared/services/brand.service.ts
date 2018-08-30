@@ -15,7 +15,6 @@ export class BrandService {
 
     getBrandById(id): Observable<any> {
         const url = this.domain + "/api/Brand/" + id;
-        //alert(url);
         return this.httpClient.get(url, { observe: 'response' }).pipe(
             map((res: HttpResponse<any>) => {
                 return res;
