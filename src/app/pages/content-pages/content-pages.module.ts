@@ -11,6 +11,7 @@ import { LoginPageComponent } from "./login/login-page.component";
 import { MaintenancePageComponent } from "./maintenance/maintenance-page.component";
 import { RegisterPageComponent } from "./register/register-page.component";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InfluencerLoginComponent } from './influencer-login/influencer-login.component';
 
 @NgModule({
     imports: [
@@ -27,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         LockScreenPageComponent,
         LoginPageComponent,
         MaintenancePageComponent,
-        RegisterPageComponent
+        RegisterPageComponent,
+        InfluencerLoginComponent
     ]
 })
 export class ContentPagesModule { }

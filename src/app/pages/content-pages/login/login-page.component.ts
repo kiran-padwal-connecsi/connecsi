@@ -38,6 +38,7 @@ export class LoginPageComponent implements OnInit {
             })
             this.validation = true;
         } else {
+            alert(loginForm.value['email']);
             this.userservice.loginService(loginForm.value).subscribe((res) => {
                 this.toastrService.success("Login is successfully Done");
                 window.sessionStorage.setItem("connecsi_key", res.body["user_id"]);

@@ -25,6 +25,7 @@ import { UserService } from './shared/services/user.service';
 import { YoutubeService } from './shared/services/youtube.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+//import { InfluencerLoginComponent } from './app/pages/content-pages/influencer-login/influencer-login.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -34,7 +35,8 @@ export function createTranslateLoader(http: HttpClient) {
     declarations: [
         AppComponent,
         FullLayoutComponent,
-        ContentLayoutComponent
+        ContentLayoutComponent,
+        //InfluencerLoginComponent
     ],
     imports: [
         BrowserAnimationsModule,
